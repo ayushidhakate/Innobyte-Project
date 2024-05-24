@@ -16,17 +16,6 @@
         margin-bottom: 5px;
     }
 
-    /* h2:after {
-        background-color: #c50000;
-        content: '';
-        display: block;
-        position: absolute;
-        right: 78%;
-        bottom: -5;
-        height: 3px;
-        width: 75px;
-        margin-bottom: 0.25em;
-    } */
     h3{
         letter-spacing: 1px;
     }

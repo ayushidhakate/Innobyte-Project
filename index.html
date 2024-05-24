@@ -12,10 +12,12 @@
           crossorigin="anonymous"></script>
      <link href="https://fonts.googleapis.com/css?family=Urbanist:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
           rel="stylesheet" />
-     <link rel="stylesheet" href="/style/header.css">
-     <link rel="stylesheet" href="/style/intro.css">
-     <link rel="stylesheet" href="/style/about.css">
-     <!-- <script src="/js/navbar.js"></script> -->
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link rel="stylesheet" href="/style/header.css">
+          <link rel="stylesheet" href="/style/intro.css">
+          <link rel="stylesheet" href="/style/about.css">
+          <link rel="stylesheet" href="/style/services.css">
 </head>
 
 <body>
@@ -24,11 +26,11 @@
                <div class="container">
                     <img src="/assets/KGH.png" alt="" width="150px">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                         aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                          <ul class="navbar-nav mb-2 mb-lg-0">
                               <li class="nav-item">
                                    <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -60,14 +62,14 @@
           <section class="intro py-5">
                <div class="container pt-5">
                     <div class="row d-flex justify-content-center align-items-center mt-4">
-                         <div class="col-md-6 text-content text-light">
+                         <div class="col-md-6 text-content text-light" data-aos="zoom-up">
                               <p>Simple- Unique - Friendly</p>
                               <h1>Make Yourself At Home <br>In Our <span style="color: #178582;">Guest House</span>.
                               </h1>
                          </div>
                          <div class="col-md-6 img-content">
-                              <img src="/assets/img1.jpg" alt="" class="w-75 rounded ">
-                              <img src="/assets/img2.jpg" alt="" class="w-75 rounded ">
+                              <img src="/assets/img1.jpg" alt="" class="w-75 rounded" data-aos="fade-right">
+                              <img src="/assets/img2.jpg" alt="" class="w-75 rounded" data-aos="fade-left">
                          </div>
                     </div>
                </div>
@@ -79,7 +81,7 @@
                          <div class="col-md-6 img-content">
                               <img src="/assets/img10.jpg" alt="" class="img-fluid w-75 my-2 rounded">
                          </div>
-                         <div class="col-md-6 pt-lg-5">
+                         <div class="col-md-6 pt-lg-5" data-aos="fade-left">
                               <h3 class="py-2 display-6 fw-bold">The Best Holidays Start Here!</h3>
                               <p>Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the hidden gems of Purulia, creating memories that linger long after your stay.</p>
                               <button>Exlpore Rooms</button>
@@ -87,8 +89,44 @@
                     </div>
                </div>
           </section>
+          <section class="services">
+               <div class="container">
+                    <h2>Our Services</h2>
+                    <div class="grid-holder">
+                         <div class="grid-item rounded p-2" data-aos="fade-up">
+                              <i class="fa-solid fa-shield-heart"></i>
+                              <h3 class="fs-4 fw-bold">High Class Security</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                         </div>
+                         <div class="grid-item rounded p-2" data-aos="fade-down">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                              <h3 class="fs-4 fw-bold">24 Hours Room Service</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                         </div>
+                         <div class="grid-item rounded p-2" data-aos="fade-up">
+                              <i class="fa-solid fa-utensils"></i>
+                              <h3 class="fs-4 fw-bold">Restaurant</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                         </div>
+                         <div class="grid-item rounded p-2" data-aos="fade-down">
+                              <i class="fa-solid fa-map"></i>
+                              <h3 class="fs-4 fw-bold">Tourist Guide Support</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                         </div>
+                    </div>
+               </div>
+          </section>
           <script src="/js/navbar.js"></script>
      </main>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+          AOS.init({
+               offset:200,
+               duration:1000,
+               easing:'ease-in-shine',
+               once:true,
+          });
+     </script>
 </body>
 
 </html>
