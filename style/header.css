@@ -12,8 +12,9 @@ html {
 
 header {
   color: #178582;
-  nav {
-    backdrop-filter: blur(5px);
+   nav{
+     backdrop-filter: blur(5px);
+     background-color: #0a1828 ;
 
     li {
       padding-left: 20px;

@@ -1,12 +1,12 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll > 100) {
-          $("header").css("background" , "#212529");
+        if (scroll > 10) {
+          $("nav").css("background" , "#0a1828");
         }
   
         else{
-            $("header").css("background" , "transparent");  	
+            $("nav").css("background" , "transparent");  	
         }
     })
   })
