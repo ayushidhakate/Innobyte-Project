@@ -31,7 +31,6 @@
       padding: 0 auto;
       margin: 0 auto;
       overflow-y: visible;
-      /* box-shadow: 0px 4px 10px rgb(50 54 57); */
       -ms-overflow-style: none;
       scrollbar-width: none;
       -webkit-touch-callout: none;
@@ -53,6 +52,8 @@
       word-break: keep-all;
       flex-shrink: 0;
       min-width: 100px;
+      border: 2px solid transparent;
+      font-weight: 700;
     }
   
     nav.nav-horizontal-scroll {
@@ -62,8 +63,8 @@
     .nav-horizontal-scroll ul li.nav-active,
     .nav-horizontal-scroll ul li:hover,
     .nav-horizontal-scroll ul li:active {
-      background: rgb(113, 179, 230);
-      color: white;
+      border-bottom: 2px solid #bfa181;
+      transition: 1s ease-in-out;
       cursor: pointer;
     }
   
@@ -73,7 +74,7 @@
   
     section.page.page-active {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: nowrap;
       align-content: center;
       justify-content: center;
