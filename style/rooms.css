@@ -17,9 +17,10 @@
   }
 } */
 
-.treckNav {
+.rooms {
   .nav-horizontal-scroll ul {
     display: flex;
+    background-color: #fff;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: center;
