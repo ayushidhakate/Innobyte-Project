@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="/style/rooms.css" />
     <link rel="stylesheet" href="/style/restaurant.css" />
     <link rel="stylesheet" href="/style/gallery.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
   </head>
 
   <body>
@@ -259,7 +261,7 @@
         <div class="container">
           <h2>Restaurant</h2>
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-sm">
+            <div class="col-sm text-center">
               <img
                 src="/assets/fishFry.jpg"
                 alt=""
@@ -267,7 +269,7 @@
               />
             </div>
             <div class="col-sm">
-              <h3>Golden Fry, Ocean Fresh</h3>
+              <h3 class="text-sm-center p-sm-5">Golden Fry, Ocean Fresh</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
                 delectus minima ex alias atque eligendi iusto, neque repudiandae
@@ -279,9 +281,9 @@
           </div>
         </div>
       </section>
-      <section class="gallery container">
+      <section class="gallery container pb-5">
         <h2>Gallery</h2>
-        <hr>
+        <hr />
         <div class="container image">
           <img src="/assets/img1.jpg" alt="" class="rounded" />
           <img src="/assets/img2.jpg" alt="" class="rounded" />
@@ -293,20 +295,132 @@
           <img src="/assets/img7.jpg" alt="" class="rounded" />
           <img src="/assets/img9.jpg" alt="" class="rounded" />
           <img src="/assets/img10.jpg" alt="" class="rounded" />
-          <img src="/assets/fishFry.jpg" alt="" class="rounded">
-          <img src="/assets/rooms/presidentialSuite_wide.jpg" alt="" class="rounded">
-          <img src="/assets/rooms/deluxe.jpg" alt="" class="rounded">
-          <img src="/assets/rooms/gym.jpg" alt="" class="rounded">
+          <img src="/assets/fishFry.jpg" alt="" class="rounded" />
+          <img
+            src="/assets/rooms/presidentialSuite_wide.jpg"
+            alt=""
+            class="rounded"
+          />
+          <img src="/assets/rooms/deluxe.jpg" alt="" class="rounded" />
+          <img src="/assets/rooms/gym.jpg" alt="" class="rounded" />
         </div>
       </section>
-      <section class="contact">
+      <section class="contact py-5">
         <div class="container">
           <h2>Contact Info</h2>
-
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-4 contactinfo rounded p-4 py-sm-2">
+              <i class="fa-solid fa-location-dot"></i>
+              <span
+                >Beside Barshal Water Tank, Manpur, Barhanti, West Bengal
+                723156</span
+              >
+              <br />
+              <i class="fa-solid fa-envelope"></i>
+              <span>kkghosh0099@gmail.com</span>
+              <br />
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 9007062180</span>
+              <div class="mt-3">
+                <i class="fa-brands fa-facebook fs-2 me-3"></i>
+                <i class="fa-brands fa-instagram fs-2 me-3"></i>
+                <i class="fa-brands fa-twitter fs-2 me-3"></i>
+                <i class="fa-brands fa-linkedin fs-2 me-3"></i>
+              </div>
+            </div>
+            <div class="col-md-8 px-5 text-center message">
+              <form action="" class="p-lg-5  py-3">
+                <h3 class="mt-4">Send a Message</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" placeholder="First Name" />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="Last Name" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="email" placeholder="Email Id" />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" placeholder="Mobile Number" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <textarea
+                      placeholder=" Write Your Message here..."
+                      rows="5"
+                    ></textarea>
+                  </div>
+                </div>
+                <a href="#" class="rounded">Send</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7313.003491353379!2d86.85979!3d23.586332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1717086837894!5m2!1sen!2sin"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
       <script src="/js/navbar.js"></script>
     </main>
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 p-4 py-sm-2">
+            <h4>Kingsukh Guest House</h4>
+            <p class="mt-3">
+              Discover a world of comfort, luxury, and adventure as you explore
+              our curated selection of hotels, making every moment of your
+              getaway truly extraordinary.
+            </p>
+            <a href="#" class="rounded">Book Now</a>
+          </div>
+          <div class="col-md-3 p-4 py-sm-2">
+            <h4>QUICK LINKS</h4>
+            <span>Browse Destinations</span>
+            <span>Special Offers & Packages</span>
+            <span>Room Types & Amenities</span>
+            <span>Customer Reviews & Ratings</span>
+            <span>Travel Tips & Guides</span>
+          </div>
+          <div class="col-md-3 p-4 py-sm-2">
+            <h4>OUR SERVICES</h4>
+            <span>Concierge Assistance</span>
+            <span>Flexible Booking Options</span>
+            <span>Airport Transfers</span>
+            <span>Wellness & Recreation</span>
+          </div>
+          <div class="col-md-3 p-4 py-sm-2">
+            <h4>CONTACT US</h4>
+            <span
+              ><b>Address:</b> Beside Barshal Water Tank, Manpur, Barhanti, West
+              Bengal 723156</span
+            >
+            <span><b>Email Id:</b> kkghosh0099@gmail.com</span>
+            <span><b>Phone Number</b> +91 9007062180</span>
+            <div class="mt-3">
+              <i class="fa-brands fa-facebook fs-2 me-3"></i>
+              <i class="fa-brands fa-instagram fs-2 me-3"></i>
+              <i class="fa-brands fa-twitter fs-2 me-3"></i>
+              <i class="fa-brands fa-linkedin fs-2 me-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({

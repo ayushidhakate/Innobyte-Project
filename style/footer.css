@@ -1,0 +1,24 @@
+footer{
+    background-color: #0a1828;
+    color: #bfa181;
+    h4{
+        font-weight: 700;
+    }
+    p{
+        text-align: justify;
+        font-size: 17px;
+    }
+    a{
+        background-color: #bfa181;
+        color: #0a1828;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    span{
+        display: block;
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+}
